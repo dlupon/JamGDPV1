@@ -16,8 +16,8 @@ public class InputManager : MonoBehaviour
 
     private Vector3 getDirection()
     {
-        _vectorInput.x = Input.GetAxis(INPUT_HORIZONTAL);
-        _vectorInput.z = Input.GetAxis(INPUT_VECTICAL);
+        _vectorInput.x = Input.GetAxisRaw(INPUT_HORIZONTAL);
+        _vectorInput.z = Input.GetAxisRaw(INPUT_VECTICAL);
         return _vectorInput;
     }
 }

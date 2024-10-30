@@ -1,24 +1,28 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-[RequireComponent(typeof(Brain))]
 public class Behaviour : MonoBehaviour
 {
     // Components
-    protected Brain _brain;
+    protected Brain _brain = null;
     protected Transform _transform;
 
 
     protected void Awake()
     {
         SetComponents();
+        SetProperties();
     }
 
     protected virtual void SetComponents()
     {
-        _brain = GetComponent<Brain>();
+        if (TryGetComponent<Brain>(out _brain));
         _transform = GetComponent<Transform>();
     }
+
+    protected virtual void SetProperties() { }
 }
