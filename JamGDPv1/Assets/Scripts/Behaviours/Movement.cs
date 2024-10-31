@@ -5,7 +5,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Movement : Behaviour
+public class Movement : Behavior
 {
     // Component
     private Rigidbody _rigidBody;

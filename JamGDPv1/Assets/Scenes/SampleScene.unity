@@ -5167,11 +5167,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!4 &1495769231 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2104376279047816393, guid: 8f6328a9814535649a8e02e6a72eae1b, type: 3}
-  m_PrefabInstance: {fileID: 6577759740295031888}
-  m_PrefabAsset: {fileID: 0}
 --- !u!43 &1591975589
 Mesh:
   m_ObjectHideFlags: 0
@@ -5751,7 +5746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d466fdfb3dea7b42855841c0102a502, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetPath: {fileID: 1495769231}
+  _targetPath: {fileID: 2013433155}
 --- !u!1 &1892659014
 GameObject:
   m_ObjectHideFlags: 0
@@ -6673,6 +6668,11 @@ LightingSettings:
   m_PVRTiledBaking: 0
   m_NumRaysToShootPerTexel: -1
   m_RespectSceneVisibilityWhenBakingGI: 0
+--- !u!4 &2013433155 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8754329230828468867, guid: 3379066c2b5df3346b6f5a15fea86e97, type: 3}
+  m_PrefabInstance: {fileID: 7973580979214144043}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &2020953750
 Mesh:
   m_ObjectHideFlags: 0
@@ -7602,6 +7602,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7442360302371192685, guid: 8f6328a9814535649a8e02e6a72eae1b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7615,9 +7619,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 22612890588874285, guid: 3379066c2b5df3346b6f5a15fea86e97, type: 3}
+      propertyPath: _speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3945170915847257699, guid: 3379066c2b5df3346b6f5a15fea86e97, type: 3}
       propertyPath: m_Name
-      value: RandomDudeStandingOverThere
+      value: BigBoi
       objectReference: {fileID: 0}
     - target: {fileID: 8754329230828468867, guid: 3379066c2b5df3346b6f5a15fea86e97, type: 3}
       propertyPath: m_LocalPosition.x
